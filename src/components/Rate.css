@@ -1,0 +1,108 @@
+.rate-container {
+    width: 328px;
+    height: 360px;
+    padding: 24px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 15px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #262E38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 16px 0 10px 0;
+}
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #969FAD;
+    width: 280px;
+}
+.btns {
+    display: flex;
+    gap: 18px;
+    margin: 24px 0 30px 0;
+}
+button {
+    width: 42px;
+    height: 42px;
+    background: #262E38;
+    color: #7C8798;
+    border-radius: 50%;
+    border: none;
+}
+.submit {
+    width: 280px;
+    height: 45px;
+    background: #FC7614;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+   border-radius: 22.5px;
+   border: none;
+}
+.active {
+    background: #FC7614;
+    color: #FFFFFF;
+}
+
+
+/* styles for desktop */
+
+
+@media only screen and (min-width: 1440px) {
+    .rate-container {
+        width: 412px;
+        height: 416px;
+        padding: 32px 0 0 32px;
+    }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+    h1 {
+        font-size: 28px;
+        margin: 32px 0 8px 0;
+    }
+    p {
+        font-size: 15px;
+        line-height: 24px;
+        width: 340px;
+    }
+    .btns {
+        gap: 21px;
+    }
+    button {
+        width: 51px;
+        height: 51px;
+    }
+    button:hover{
+        cursor: pointer;
+        background: #7C8798;
+        color: #FFFFFF;
+        transition: 0.3s;
+    }
+    .submit {
+        width: 340px;
+        font-size: 15px;
+        letter-spacing: 2px ;
+    }
+    .submit:hover {
+        cursor: pointer;
+        background: #FFFFFF;
+        color: #FC7614;
+        transition: 0.3s;
+    }
+}
