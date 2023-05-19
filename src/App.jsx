@@ -1,20 +1,21 @@
-import { useState } from 'react'
-import './App.css'
-import Rate from './components/Rate' 
-import Result from './components/Result'
-import Globalstayle from './styled-components/GlobalStyles'
-
+import { useState } from "react";
+import Rate from "./components/rate";
+import Result from "./components/Result";
+import Globalstayle from "./styled-components/GlobalStyles";
 
 function App() {
-const [submit , setSubmit] = useState(false);
-const [rate , setRate] = useState();
+  const [submit, setSubmit] = useState(false);
+  const [rate, setRate] = useState();
   return (
     <div>
-      <Globalstayle/>
-      {submit ? <Result rate={rate} /> : <Rate setSubmit={setSubmit} rate={rate} setRate={setRate} />}
+      <Globalstayle />
+      {submit ? (
+        <Result rate={rate} />
+      ) : (
+        <Rate setSubmit={setSubmit} rate={rate} setRate={setRate} />
+      )}
     </div>
-  )
-     
+  );
 }
 
-export default App
+export default App;
