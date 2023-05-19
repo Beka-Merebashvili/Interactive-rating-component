@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Rate from "./components/rate";
+import Rate from "./components/Rate";
 import Result from "./components/Result";
 import Globalstayle from "./styled-components/GlobalStyles";
 
